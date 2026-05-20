@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>2026/5/26～2026/6/30　色々お願いします</title>
+  <title>取り扱い説明書</title>
 
   <style>
     body {
@@ -32,11 +32,13 @@
       padding: 25px;
       margin-bottom: 20px;
       border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     h2 {
       border-left: 5px solid #333;
       padding-left: 10px;
+      margin-top: 0;
     }
 
     img {
@@ -53,7 +55,28 @@
       margin-top: 15px;
     }
 
-    ul {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background: #333;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background: #f9f9f9;
+    }
+
+    ul, ol {
       padding-left: 20px;
     }
 
@@ -63,18 +86,29 @@
       color: gray;
       font-size: 14px;
     }
+
+    @media screen and (max-width: 600px) {
+      iframe {
+        height: 220px;
+      }
+
+      section {
+        padding: 18px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
   <header>
-    <h1>〇〇 製品 取り扱い説明書</h1>
-    <p>簡単な使い方と注意事項</p>
+    <h1>〇〇製品 取り扱い説明書</h1>
+    <p>簡単な使い方・仕様・注意事項</p>
   </header>
 
   <div class="container">
 
+    <!-- 製品イメージ -->
     <section>
       <h2>① 製品イメージ</h2>
 
@@ -82,23 +116,27 @@
         製品の外観はこちらです。
       </p>
 
-      <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=1200"
-           alt="製品イメージ">
+      <img
+        src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=1200"
+        alt="製品イメージ">
     </section>
 
+    <!-- 基本操作 -->
     <section>
       <h2>② 基本操作</h2>
 
       <ol>
         <li>電源ボタンを押します</li>
         <li>ランプ点灯を確認します</li>
-        <li>スタートボタンを押します</li>
+        <li>STARTボタンを押します</li>
       </ol>
 
-      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200"
-           alt="操作説明">
+      <img
+        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200"
+        alt="操作説明">
     </section>
 
+    <!-- 動画 -->
     <section>
       <h2>③ 操作動画</h2>
 
@@ -112,14 +150,63 @@
       </iframe>
     </section>
 
+    <!-- 製品仕様 -->
     <section>
-      <h2>④ 注意事項</h2>
+      <h2>④ 製品仕様</h2>
+
+      <table>
+        <tr>
+          <th>項目</th>
+          <th>内容</th>
+        </tr>
+
+        <tr>
+          <td>製品名</td>
+          <td>Sample Device X</td>
+        </tr>
+
+        <tr>
+          <td>サイズ</td>
+          <td>120mm × 80mm</td>
+        </tr>
+
+        <tr>
+          <td>重量</td>
+          <td>350g</td>
+        </tr>
+
+        <tr>
+          <td>対応OS</td>
+          <td>iOS / Android</td>
+        </tr>
+
+        <tr>
+          <td>バッテリー</td>
+          <td>約10時間</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- 注意事項 -->
+    <section>
+      <h2>⑤ 注意事項</h2>
 
       <ul>
         <li>水に濡らさないでください</li>
         <li>高温環境で使用しないでください</li>
         <li>異常を感じた場合は使用を停止してください</li>
       </ul>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+      <h2>⑥ よくある質問</h2>
+
+      <p><strong>Q. 電源が入りません</strong></p>
+      <p>A. ケーブル接続と充電状態を確認してください。</p>
+
+      <p><strong>Q. 動作しません</strong></p>
+      <p>A. 一度再起動を行ってください。</p>
     </section>
 
   </div>
