@@ -1,10 +1,132 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>Hello Yumiko&Tamiko!</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>取り扱い説明書</title>
+
+  <style>
+    body {
+      font-family: sans-serif;
+      margin: 0;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #222;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+    }
+
+    h2 {
+      border-left: 5px solid #333;
+      padding-left: 10px;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: gray;
+      font-size: 14px;
+    }
+  </style>
 </head>
+
 <body>
-    <h1>Hello Yumiko&Tamiko!</h1>
+
+  <header>
+    <h1>〇〇 製品 取り扱い説明書</h1>
+    <p>簡単な使い方と注意事項</p>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>① 製品イメージ</h2>
+
+      <p>
+        製品の外観はこちらです。
+      </p>
+
+      <img src="https://images.unsplash.com/photo-1517336714739-489689fd1ca8?q=80&w=1200"
+           alt="製品イメージ">
+    </section>
+
+    <section>
+      <h2>② 基本操作</h2>
+
+      <ol>
+        <li>電源ボタンを押します</li>
+        <li>ランプ点灯を確認します</li>
+        <li>スタートボタンを押します</li>
+      </ol>
+
+      <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200"
+           alt="操作説明">
+    </section>
+
+    <section>
+      <h2>③ 操作動画</h2>
+
+      <p>
+        以下の動画で操作方法を確認できます。
+      </p>
+
+      <iframe
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section>
+      <h2>④ 注意事項</h2>
+
+      <ul>
+        <li>水に濡らさないでください</li>
+        <li>高温環境で使用しないでください</li>
+        <li>異常を感じた場合は使用を停止してください</li>
+      </ul>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2026 Sample Manual
+  </footer>
+
 </body>
 </html>
